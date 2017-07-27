@@ -7,9 +7,16 @@
 //
 
 import Cocoa
+import RealmSwift
+import CoreFoundation
 
 class ViewController: NSViewController {
 
+    let realm = try! Realm()
+
+    @IBOutlet weak var rootPassword: NSTextField!
+    @IBOutlet weak var defaultLocationName: NSTextField!
+    
 	@IBOutlet weak var toggleButton: NSButton!
 	
 	override func viewDidLoad() {
@@ -17,6 +24,14 @@ class ViewController: NSViewController {
 
 		// Do any additional setup after loading the view.
 	}
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        guard let userData = getUserData() else { return }
+        guard let rootPassword = rootPassword, let defaultLocationName = defaultLocationName else { return }
+        rootPassword.stringValue = userData.rootPassword 
+        defaultLocationName.stringValue = userData.defaultLocationName 
+    }
 
 	override var representedObject: Any? {
 		didSet {
@@ -34,13 +49,105 @@ class ViewController: NSViewController {
 		return task.terminationStatus
 	}
 	
-	@IBAction func buttonTapped(button: NSButton) {
-		if button.state == NSOnState {
-			shell("networksetup", "-switchtolocation", "Automatic")
-		} else {
-			shell("networksetup", "-switchtolocation", "AirplaneMode")
-		}
-	}
+    private func getUserData() -> UserData? {
+        guard let user = realm.objects(UserData.self).first else {
+            return nil
+        }
+        return user
+    }
+    
+    func dialogOKCancel(question: String, text: String) -> Bool {
+        let alert: NSAlert = NSAlert()
+        alert.messageText = question
+        alert.informativeText = text
+        alert.alertStyle = NSAlertStyle.warning
+        alert.addButton(withTitle: "OK")
+        alert.addButton(withTitle: "Cancel")
+        let res = alert.runModal()
+        if res == NSAlertFirstButtonReturn {
+            return true
+        }
+        return false
+    }
+    
+    @IBAction func buttonSaveTapped(button: NSButton) {
+        print(rootPassword.stringValue)
+        if rootPassword.stringValue != "" && defaultLocationName.stringValue != "" {
+            let userData = getUserData()
+            if userData != nil {
+                try! realm.write {
+                    userData?.rootPassword = rootPassword.stringValue
+                    userData?.defaultLocationName = defaultLocationName.stringValue
+                    try! realm.commitWrite()
+                }
+            } else {
+                let userData = UserData()
+                userData.rootPassword = rootPassword.stringValue
+                userData.defaultLocationName = defaultLocationName.stringValue
+                try! realm.write {
+                    realm.add(userData)
+                    try! realm.commitWrite()
+                }
+            }
+        } else {
+            let alert = NSAlert.init()
+            alert.messageText = "Should you fill the fields"
+            alert.informativeText = "Please, do it!"
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
+    }
+    
+    @IBAction func buttonTapped(button: NSButton) {
+        guard let userData = getUserData() else { return }
+        if userData.hasCreated == true {
+            if button.state == NSOnState {
+                shell("sudo -S <<< \"\(userData.rootPassword)\" networksetup -switchtolocation \(userData.defaultLocationName)")
+            } else {
+                shell("sudo -S <<< \"\(userData.rootPassword)\" networksetup -switchtolocation AirplaneMode")
+            }
+        } else {
+            let alert = NSAlert.init()
+            alert.messageText = "Should you add AirplanMode before change network status."
+            alert.informativeText = "Please, do it!"
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
+    }
+    
+    @IBAction func buttonModeTapped(button: NSButton) {
+        guard let userData = getUserData() else { return }
+        if userData.hasCreated == false {
+            shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-createlocation", "AirplaneMode", "populate")
+            shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-switchtolocation", "AirplaneMode")
+            shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-setv4off", "Ethernet")
+            shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-switchtolocation", "\(userData.defaultLocationName)")
+            try! realm.write {
+                userData.hasCreated = true
+                try! realm.commitWrite()
+            }
+        } else {
+            let answer = dialogOKCancel(question: "You already create this location, do you want continue?", text: "Choose your answer.")
+            if answer == true {
+                shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-createlocation", "AirplaneMode", "populate")
+                shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-switchtolocation", "AirplaneMode")
+                shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-setv4off", "Ethernet")
+                shell("sudo", "-S", "<<<", "\(userData.rootPassword)", "networksetup", "-switchtolocation", "\(userData.defaultLocationName)")
+                try! realm.write {
+                    userData.hasCreated = true
+                    try! realm.commitWrite()
+                }
+            }
+        }
+    }
 
 }
+
+//MARK: - Structs
+final class UserData: Object {
+    dynamic var rootPassword: String = ""
+    dynamic var defaultLocationName: String = "Automatic"
+    dynamic var hasCreated: Bool = false
+}
+
 

@@ -13,6 +13,9 @@
 		0B6D57561F28FF0900430CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D57541F28FF0900430CD3 /* Main.storyboard */; };
 		0B6D57611F28FF0900430CD3 /* ManageNetworkConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D57601F28FF0900430CD3 /* ManageNetworkConnectionTests.swift */; };
 		0B6D576C1F28FF0A00430CD3 /* ManageNetworkConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D576B1F28FF0A00430CD3 /* ManageNetworkConnectionUITests.swift */; };
+		E4C2F88EE7597CCE8DD59CB4 /* Pods_ManageNetworkConnectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0073CA76AADA5FB77153BD /* Pods_ManageNetworkConnectionUITests.framework */; };
+		E822D4435E34E6233DF0BFBB /* Pods_ManageNetworkConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDA9662C7C9D45C76C1B537 /* Pods_ManageNetworkConnection.framework */; };
+		FF1062E51A96A1B40582A119 /* Pods_ManageNetworkConnectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9264EA6AF72C935422C37C9 /* Pods_ManageNetworkConnectionTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,15 @@
 		0B6D57671F28FF0900430CD3 /* ManageNetworkConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageNetworkConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6D576B1F28FF0A00430CD3 /* ManageNetworkConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageNetworkConnectionUITests.swift; sourceTree = "<group>"; };
 		0B6D576D1F28FF0A00430CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		216E72E8DDA59F7B3FE586CE /* Pods-ManageNetworkConnectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageNetworkConnectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManageNetworkConnectionTests/Pods-ManageNetworkConnectionTests.release.xcconfig"; sourceTree = "<group>"; };
+		32A74DD24C1AEBCB50B56A39 /* Pods-ManageNetworkConnectionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageNetworkConnectionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManageNetworkConnectionUITests/Pods-ManageNetworkConnectionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F92A613E8610A53AE390ED0 /* Pods-ManageNetworkConnectionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageNetworkConnectionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManageNetworkConnectionUITests/Pods-ManageNetworkConnectionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5397110C6813CBC01FC12D2A /* Pods-ManageNetworkConnectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageNetworkConnectionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManageNetworkConnectionTests/Pods-ManageNetworkConnectionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A0073CA76AADA5FB77153BD /* Pods_ManageNetworkConnectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManageNetworkConnectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7DC80F0A32547DD2C19377 /* Pods-ManageNetworkConnection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageNetworkConnection.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManageNetworkConnection/Pods-ManageNetworkConnection.release.xcconfig"; sourceTree = "<group>"; };
+		DDDA9662C7C9D45C76C1B537 /* Pods_ManageNetworkConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManageNetworkConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05ABFC04CF176E74C9053C8 /* Pods-ManageNetworkConnection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageNetworkConnection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManageNetworkConnection/Pods-ManageNetworkConnection.debug.xcconfig"; sourceTree = "<group>"; };
+		F9264EA6AF72C935422C37C9 /* Pods_ManageNetworkConnectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManageNetworkConnectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E822D4435E34E6233DF0BFBB /* Pods_ManageNetworkConnection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1062E51A96A1B40582A119 /* Pods_ManageNetworkConnectionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C2F88EE7597CCE8DD59CB4 /* Pods_ManageNetworkConnectionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,8 @@
 				0B6D575F1F28FF0900430CD3 /* ManageNetworkConnectionTests */,
 				0B6D576A1F28FF0A00430CD3 /* ManageNetworkConnectionUITests */,
 				0B6D574C1F28FF0900430CD3 /* Products */,
+				5D51DD9597A2B181A53FCE18 /* Pods */,
+				DB3024670F62658FC3FB9233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +139,29 @@
 			path = ManageNetworkConnectionUITests;
 			sourceTree = "<group>";
 		};
+		5D51DD9597A2B181A53FCE18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F05ABFC04CF176E74C9053C8 /* Pods-ManageNetworkConnection.debug.xcconfig */,
+				8D7DC80F0A32547DD2C19377 /* Pods-ManageNetworkConnection.release.xcconfig */,
+				5397110C6813CBC01FC12D2A /* Pods-ManageNetworkConnectionTests.debug.xcconfig */,
+				216E72E8DDA59F7B3FE586CE /* Pods-ManageNetworkConnectionTests.release.xcconfig */,
+				4F92A613E8610A53AE390ED0 /* Pods-ManageNetworkConnectionUITests.debug.xcconfig */,
+				32A74DD24C1AEBCB50B56A39 /* Pods-ManageNetworkConnectionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB3024670F62658FC3FB9233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA9662C7C9D45C76C1B537 /* Pods_ManageNetworkConnection.framework */,
+				F9264EA6AF72C935422C37C9 /* Pods_ManageNetworkConnectionTests.framework */,
+				6A0073CA76AADA5FB77153BD /* Pods_ManageNetworkConnectionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B6D57701F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnection" */;
 			buildPhases = (
+				FE308174B628B408B598B3F1 /* [CP] Check Pods Manifest.lock */,
 				0B6D57471F28FF0900430CD3 /* Sources */,
 				0B6D57481F28FF0900430CD3 /* Frameworks */,
 				0B6D57491F28FF0900430CD3 /* Resources */,
+				27626F0CB9AC3F1283F4E5BC /* [CP] Embed Pods Frameworks */,
+				79D3F9496688C6F0D9F8D82E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B6D57731F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnectionTests" */;
 			buildPhases = (
+				653FA4AACB586353DBF08821 /* [CP] Check Pods Manifest.lock */,
 				0B6D57581F28FF0900430CD3 /* Sources */,
 				0B6D57591F28FF0900430CD3 /* Frameworks */,
 				0B6D575A1F28FF0900430CD3 /* Resources */,
+				633EBD92DBA71981DA5ED2A5 /* [CP] Embed Pods Frameworks */,
+				5BABE83FA599AE3EA8574C9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B6D57761F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnectionUITests" */;
 			buildPhases = (
+				632CD269A52A1FB3C7C784CD /* [CP] Check Pods Manifest.lock */,
 				0B6D57631F28FF0900430CD3 /* Sources */,
 				0B6D57641F28FF0900430CD3 /* Frameworks */,
 				0B6D57651F28FF0900430CD3 /* Resources */,
+				74EEE355274D1DF9CD9361AA /* [CP] Embed Pods Frameworks */,
+				7C36CCCB52E45A510C900B0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +301,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27626F0CB9AC3F1283F4E5BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageNetworkConnection/Pods-ManageNetworkConnection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BABE83FA599AE3EA8574C9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageNetworkConnectionTests/Pods-ManageNetworkConnectionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		632CD269A52A1FB3C7C784CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		633EBD92DBA71981DA5ED2A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageNetworkConnectionTests/Pods-ManageNetworkConnectionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653FA4AACB586353DBF08821 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74EEE355274D1DF9CD9361AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageNetworkConnectionUITests/Pods-ManageNetworkConnectionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79D3F9496688C6F0D9F8D82E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageNetworkConnection/Pods-ManageNetworkConnection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C36CCCB52E45A510C900B0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageNetworkConnectionUITests/Pods-ManageNetworkConnectionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE308174B628B408B598B3F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B6D57471F28FF0900430CD3 /* Sources */ = {
@@ -400,6 +587,7 @@
 		};
 		0B6D57711F28FF0A00430CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05ABFC04CF176E74C9053C8 /* Pods-ManageNetworkConnection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -414,6 +602,7 @@
 		};
 		0B6D57721F28FF0A00430CD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D7DC80F0A32547DD2C19377 /* Pods-ManageNetworkConnection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -428,6 +617,7 @@
 		};
 		0B6D57741F28FF0A00430CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5397110C6813CBC01FC12D2A /* Pods-ManageNetworkConnectionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -444,6 +634,7 @@
 		};
 		0B6D57751F28FF0A00430CD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216E72E8DDA59F7B3FE586CE /* Pods-ManageNetworkConnectionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +651,7 @@
 		};
 		0B6D57771F28FF0A00430CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F92A613E8610A53AE390ED0 /* Pods-ManageNetworkConnectionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -475,6 +667,7 @@
 		};
 		0B6D57781F28FF0A00430CD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A74DD24C1AEBCB50B56A39 /* Pods-ManageNetworkConnectionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
