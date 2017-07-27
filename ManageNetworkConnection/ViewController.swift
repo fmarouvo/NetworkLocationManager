@@ -49,6 +49,31 @@ class ViewController: NSViewController {
 		return task.terminationStatus
 	}
 	
+	func shellBash(launchPath: String, arguments: [String]) -> String
+	{
+		let task = Process()
+		task.launchPath = launchPath
+		task.arguments = arguments
+		
+		let pipe = Pipe()
+		task.standardOutput = pipe
+		task.launch()
+		
+		let data = pipe.fileHandleForReading.readDataToEndOfFile()
+		let output = String(data: data, encoding: String.Encoding.utf8)!
+		if output.characters.count > 0 {
+			//remove newline character.
+			let lastIndex = output.index(before: output.endIndex)
+			return output[output.startIndex ..< lastIndex]
+		}
+		return output
+	}
+	
+	func bash(command: String, arguments: [String]) -> String {
+		let whichPathForCommand = shellBash(launchPath: "/usr/bin/env", arguments: ["\(command)" ])
+		return shellBash(launchPath: whichPathForCommand, arguments: arguments)
+	}
+	
     private func getUserData() -> UserData? {
         guard let user = realm.objects(UserData.self).first else {
             return nil
@@ -102,9 +127,9 @@ class ViewController: NSViewController {
         guard let userData = getUserData() else { return }
         if userData.hasCreated == true {
             if button.state == NSOnState {
-                shell("sudo -S <<< \"\(userData.rootPassword)\" networksetup -switchtolocation \(userData.defaultLocationName)")
+				NSAppleScript(source: "do shell script \"networksetup -switchtolocation \(userData.defaultLocationName)\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
             } else {
-                shell("sudo -S <<< \"\(userData.rootPassword)\" networksetup -switchtolocation AirplaneMode")
+                NSAppleScript(source: "do shell script \"networksetup -switchtolocation AirplaneMode\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
             }
         } else {
             let alert = NSAlert.init()

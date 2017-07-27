@@ -117,6 +117,17 @@
                                     <action selector="buttonModeTappedWithButton:" target="XfG-lQ-9wD" id="WZk-SA-9j5"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6Z-XP-Qx8">
+                                <rect key="frame" x="57" y="13" width="70" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IH2-o0-uRe">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="MRp-tz-gKz" kind="sheet" id="aHk-jD-KOH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <accessibility identifier="NetworkStatus"/>
                     </view>
@@ -126,7 +137,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="631"/>
+            <point key="canvasLocation" x="405" y="551"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0LI-bS-laV">
@@ -207,4 +218,7 @@
             <point key="canvasLocation" x="-128" y="631"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aHk-jD-KOH"/>
+    </inferredMetricsTieBreakers>
 </document>
