@@ -64,7 +64,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="Main" id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -81,7 +81,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController storyboardIdentifier="newtwork" id="XfG-lQ-9wD" customClass="ViewController" customModule="ManageNetworkConnection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newtwork" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="ManageNetworkConnection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" identifier="NetworkStatus" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="298" height="180"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -125,7 +125,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="MRp-tz-gKz" kind="sheet" id="aHk-jD-KOH"/>
+                                    <segue destination="MRp-tz-gKz" kind="show" id="GUf-bi-8wA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,7 +142,7 @@
         <!--View Controller-->
         <scene sceneID="0LI-bS-laV">
             <objects>
-                <viewController id="MRp-tz-gKz" customClass="ViewController" customModule="ManageNetworkConnection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController showSeguePresentationStyle="single" id="MRp-tz-gKz" customClass="ViewController" customModule="ManageNetworkConnection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" identifier="userDataSegue" wantsLayer="YES" id="Q3L-i0-pkn">
                         <rect key="frame" x="0.0" y="0.0" width="298" height="180"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -191,7 +191,8 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="XfG-lQ-9wD" kind="sheet" id="MzO-XK-GrG"/>
+                                    <action selector="teste:" target="MRp-tz-gKz" id="Muo-2M-qCM"/>
+                                    <segue destination="XfG-lQ-9wD" kind="show" id="qKI-gT-y9B"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qzc-FR-krj">
@@ -219,6 +220,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aHk-jD-KOH"/>
+        <segue reference="GUf-bi-8wA"/>
     </inferredMetricsTieBreakers>
 </document>
