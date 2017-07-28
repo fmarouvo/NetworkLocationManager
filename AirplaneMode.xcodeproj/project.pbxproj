@@ -36,16 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B6D574B1F28FF0900430CD3 /* ManageNetworkConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManageNetworkConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6D574B1F28FF0900430CD3 /* AirplaneMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirplaneMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6D574E1F28FF0900430CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B6D57501F28FF0900430CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B6D57521F28FF0900430CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B6D57551F28FF0900430CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B6D57571F28FF0900430CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B6D575C1F28FF0900430CD3 /* ManageNetworkConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageNetworkConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6D575C1F28FF0900430CD3 /* AirplaneModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirplaneModeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6D57601F28FF0900430CD3 /* ManageNetworkConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageNetworkConnectionTests.swift; sourceTree = "<group>"; };
 		0B6D57621F28FF0900430CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B6D57671F28FF0900430CD3 /* ManageNetworkConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageNetworkConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6D57671F28FF0900430CD3 /* AirplaneModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirplaneModeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6D576B1F28FF0A00430CD3 /* ManageNetworkConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageNetworkConnectionUITests.swift; sourceTree = "<group>"; };
 		0B6D576D1F28FF0A00430CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		216E72E8DDA59F7B3FE586CE /* Pods-ManageNetworkConnectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageNetworkConnectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManageNetworkConnectionTests/Pods-ManageNetworkConnectionTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,9 +90,9 @@
 		0B6D57421F28FF0900430CD3 = {
 			isa = PBXGroup;
 			children = (
-				0B6D574D1F28FF0900430CD3 /* ManageNetworkConnection */,
-				0B6D575F1F28FF0900430CD3 /* ManageNetworkConnectionTests */,
-				0B6D576A1F28FF0A00430CD3 /* ManageNetworkConnectionUITests */,
+				0B6D574D1F28FF0900430CD3 /* AirplaneMode */,
+				0B6D575F1F28FF0900430CD3 /* AirplaneModeTests */,
+				0B6D576A1F28FF0A00430CD3 /* AirplaneModeUITests */,
 				0B6D574C1F28FF0900430CD3 /* Products */,
 				5D51DD9597A2B181A53FCE18 /* Pods */,
 				DB3024670F62658FC3FB9233 /* Frameworks */,
@@ -102,14 +102,14 @@
 		0B6D574C1F28FF0900430CD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B6D574B1F28FF0900430CD3 /* ManageNetworkConnection.app */,
-				0B6D575C1F28FF0900430CD3 /* ManageNetworkConnectionTests.xctest */,
-				0B6D57671F28FF0900430CD3 /* ManageNetworkConnectionUITests.xctest */,
+				0B6D574B1F28FF0900430CD3 /* AirplaneMode.app */,
+				0B6D575C1F28FF0900430CD3 /* AirplaneModeTests.xctest */,
+				0B6D57671F28FF0900430CD3 /* AirplaneModeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B6D574D1F28FF0900430CD3 /* ManageNetworkConnection */ = {
+		0B6D574D1F28FF0900430CD3 /* AirplaneMode */ = {
 			isa = PBXGroup;
 			children = (
 				0B6D574E1F28FF0900430CD3 /* AppDelegate.swift */,
@@ -118,24 +118,27 @@
 				0B6D57541F28FF0900430CD3 /* Main.storyboard */,
 				0B6D57571F28FF0900430CD3 /* Info.plist */,
 			);
+			name = AirplaneMode;
 			path = ManageNetworkConnection;
 			sourceTree = "<group>";
 		};
-		0B6D575F1F28FF0900430CD3 /* ManageNetworkConnectionTests */ = {
+		0B6D575F1F28FF0900430CD3 /* AirplaneModeTests */ = {
 			isa = PBXGroup;
 			children = (
 				0B6D57601F28FF0900430CD3 /* ManageNetworkConnectionTests.swift */,
 				0B6D57621F28FF0900430CD3 /* Info.plist */,
 			);
+			name = AirplaneModeTests;
 			path = ManageNetworkConnectionTests;
 			sourceTree = "<group>";
 		};
-		0B6D576A1F28FF0A00430CD3 /* ManageNetworkConnectionUITests */ = {
+		0B6D576A1F28FF0A00430CD3 /* AirplaneModeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				0B6D576B1F28FF0A00430CD3 /* ManageNetworkConnectionUITests.swift */,
 				0B6D576D1F28FF0A00430CD3 /* Info.plist */,
 			);
+			name = AirplaneModeUITests;
 			path = ManageNetworkConnectionUITests;
 			sourceTree = "<group>";
 		};
@@ -165,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B6D574A1F28FF0900430CD3 /* ManageNetworkConnection */ = {
+		0B6D574A1F28FF0900430CD3 /* AirplaneMode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B6D57701F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnection" */;
+			buildConfigurationList = 0B6D57701F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneMode" */;
 			buildPhases = (
 				FE308174B628B408B598B3F1 /* [CP] Check Pods Manifest.lock */,
 				0B6D57471F28FF0900430CD3 /* Sources */,
@@ -180,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = ManageNetworkConnection;
+			name = AirplaneMode;
 			productName = ManageNetworkConnection;
-			productReference = 0B6D574B1F28FF0900430CD3 /* ManageNetworkConnection.app */;
+			productReference = 0B6D574B1F28FF0900430CD3 /* AirplaneMode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0B6D575B1F28FF0900430CD3 /* ManageNetworkConnectionTests */ = {
+		0B6D575B1F28FF0900430CD3 /* AirplaneModeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B6D57731F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnectionTests" */;
+			buildConfigurationList = 0B6D57731F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeTests" */;
 			buildPhases = (
 				653FA4AACB586353DBF08821 /* [CP] Check Pods Manifest.lock */,
 				0B6D57581F28FF0900430CD3 /* Sources */,
@@ -201,14 +204,14 @@
 			dependencies = (
 				0B6D575E1F28FF0900430CD3 /* PBXTargetDependency */,
 			);
-			name = ManageNetworkConnectionTests;
+			name = AirplaneModeTests;
 			productName = ManageNetworkConnectionTests;
-			productReference = 0B6D575C1F28FF0900430CD3 /* ManageNetworkConnectionTests.xctest */;
+			productReference = 0B6D575C1F28FF0900430CD3 /* AirplaneModeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0B6D57661F28FF0900430CD3 /* ManageNetworkConnectionUITests */ = {
+		0B6D57661F28FF0900430CD3 /* AirplaneModeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B6D57761F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnectionUITests" */;
+			buildConfigurationList = 0B6D57761F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeUITests" */;
 			buildPhases = (
 				632CD269A52A1FB3C7C784CD /* [CP] Check Pods Manifest.lock */,
 				0B6D57631F28FF0900430CD3 /* Sources */,
@@ -222,9 +225,9 @@
 			dependencies = (
 				0B6D57691F28FF0A00430CD3 /* PBXTargetDependency */,
 			);
-			name = ManageNetworkConnectionUITests;
+			name = AirplaneModeUITests;
 			productName = ManageNetworkConnectionUITests;
-			productReference = 0B6D57671F28FF0900430CD3 /* ManageNetworkConnectionUITests.xctest */;
+			productReference = 0B6D57671F28FF0900430CD3 /* AirplaneModeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -256,7 +259,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0B6D57461F28FF0900430CD3 /* Build configuration list for PBXProject "ManageNetworkConnection" */;
+			buildConfigurationList = 0B6D57461F28FF0900430CD3 /* Build configuration list for PBXProject "AirplaneMode" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -269,9 +272,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B6D574A1F28FF0900430CD3 /* ManageNetworkConnection */,
-				0B6D575B1F28FF0900430CD3 /* ManageNetworkConnectionTests */,
-				0B6D57661F28FF0900430CD3 /* ManageNetworkConnectionUITests */,
+				0B6D574A1F28FF0900430CD3 /* AirplaneMode */,
+				0B6D575B1F28FF0900430CD3 /* AirplaneModeTests */,
+				0B6D57661F28FF0900430CD3 /* AirplaneModeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -471,12 +474,12 @@
 /* Begin PBXTargetDependency section */
 		0B6D575E1F28FF0900430CD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0B6D574A1F28FF0900430CD3 /* ManageNetworkConnection */;
+			target = 0B6D574A1F28FF0900430CD3 /* AirplaneMode */;
 			targetProxy = 0B6D575D1F28FF0900430CD3 /* PBXContainerItemProxy */;
 		};
 		0B6D57691F28FF0A00430CD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0B6D574A1F28FF0900430CD3 /* ManageNetworkConnection */;
+			target = 0B6D574A1F28FF0900430CD3 /* AirplaneMode */;
 			targetProxy = 0B6D57681F28FF0A00430CD3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -594,7 +597,7 @@
 				DEVELOPMENT_TEAM = MWMD8C75F2;
 				INFOPLIST_FILE = ManageNetworkConnection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.ManageNetworkConnection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -609,7 +612,7 @@
 				DEVELOPMENT_TEAM = MWMD8C75F2;
 				INFOPLIST_FILE = ManageNetworkConnection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.ManageNetworkConnection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -628,7 +631,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.ManageNetworkConnectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManageNetworkConnection.app/Contents/MacOS/ManageNetworkConnection";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirplaneMode.app/Contents/MacOS/AirplaneMode";
 			};
 			name = Debug;
 		};
@@ -645,7 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.ManageNetworkConnectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManageNetworkConnection.app/Contents/MacOS/ManageNetworkConnection";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirplaneMode.app/Contents/MacOS/AirplaneMode";
 			};
 			name = Release;
 		};
@@ -684,7 +687,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B6D57461F28FF0900430CD3 /* Build configuration list for PBXProject "ManageNetworkConnection" */ = {
+		0B6D57461F28FF0900430CD3 /* Build configuration list for PBXProject "AirplaneMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B6D576E1F28FF0A00430CD3 /* Debug */,
@@ -693,7 +696,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B6D57701F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnection" */ = {
+		0B6D57701F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B6D57711F28FF0A00430CD3 /* Debug */,
@@ -702,7 +705,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B6D57731F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnectionTests" */ = {
+		0B6D57731F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B6D57741F28FF0A00430CD3 /* Debug */,
@@ -711,7 +714,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B6D57761F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "ManageNetworkConnectionUITests" */ = {
+		0B6D57761F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B6D57771F28FF0A00430CD3 /* Debug */,

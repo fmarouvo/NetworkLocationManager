@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B6D574A1F28FF0900430CD3"
-               BuildableName = "ManageNetworkConnection.app"
-               BlueprintName = "ManageNetworkConnection"
-               ReferencedContainer = "container:ManageNetworkConnection.xcodeproj">
+               BuildableName = "AirplaneMode.app"
+               BlueprintName = "AirplaneMode"
+               ReferencedContainer = "container:AirplaneMode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B6D575B1F28FF0900430CD3"
-               BuildableName = "ManageNetworkConnectionTests.xctest"
-               BlueprintName = "ManageNetworkConnectionTests"
-               ReferencedContainer = "container:ManageNetworkConnection.xcodeproj">
+               BuildableName = "AirplaneModeTests.xctest"
+               BlueprintName = "AirplaneModeTests"
+               ReferencedContainer = "container:AirplaneMode.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B6D57661F28FF0900430CD3"
-               BuildableName = "ManageNetworkConnectionUITests.xctest"
-               BlueprintName = "ManageNetworkConnectionUITests"
-               ReferencedContainer = "container:ManageNetworkConnection.xcodeproj">
+               BuildableName = "AirplaneModeUITests.xctest"
+               BlueprintName = "AirplaneModeUITests"
+               ReferencedContainer = "container:AirplaneMode.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B6D574A1F28FF0900430CD3"
-            BuildableName = "ManageNetworkConnection.app"
-            BlueprintName = "ManageNetworkConnection"
-            ReferencedContainer = "container:ManageNetworkConnection.xcodeproj">
+            BuildableName = "AirplaneMode.app"
+            BlueprintName = "AirplaneMode"
+            ReferencedContainer = "container:AirplaneMode.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B6D574A1F28FF0900430CD3"
-            BuildableName = "ManageNetworkConnection.app"
-            BlueprintName = "ManageNetworkConnection"
-            ReferencedContainer = "container:ManageNetworkConnection.xcodeproj">
+            BuildableName = "AirplaneMode.app"
+            BlueprintName = "AirplaneMode"
+            ReferencedContainer = "container:AirplaneMode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B6D574A1F28FF0900430CD3"
-            BuildableName = "ManageNetworkConnection.app"
-            BlueprintName = "ManageNetworkConnection"
-            ReferencedContainer = "container:ManageNetworkConnection.xcodeproj">
+            BuildableName = "AirplaneMode.app"
+            BlueprintName = "AirplaneMode"
+            ReferencedContainer = "container:AirplaneMode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,14 +7,15 @@
 //
 
 import Cocoa
+import RealmSwift
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		// Insert code here to initialize your application
+        #if DEBUG
+            print(Realm.Configuration.defaultConfiguration.fileURL!.absoluteString)
+        #endif
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {

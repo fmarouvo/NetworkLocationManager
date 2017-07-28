@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ManageNetworkConnection.xcodeproj">
+      location = "group:/Users/fausto/Projetos/iOS/NetworkLocationManager/AirplaneMode.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

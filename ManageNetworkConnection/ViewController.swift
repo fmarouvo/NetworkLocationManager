@@ -14,14 +14,20 @@ class ViewController: NSViewController {
 
     let realm = try! Realm()
 
+    @IBOutlet weak var firstView: NSView!
     @IBOutlet weak var rootPassword: NSTextField!
     @IBOutlet weak var defaultLocationName: NSTextField!
     
+    @IBOutlet weak var secondView: NSView!
 	@IBOutlet weak var toggleButton: NSButton!
 	
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        view.window?.title = "AirplaneMode (Settings)"
+    }
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
 		// Do any additional setup after loading the view.
 	}
     
@@ -81,7 +87,7 @@ class ViewController: NSViewController {
             }
         } else {
             let alert = NSAlert.init()
-            alert.messageText = "Should you fill the fields"
+            alert.messageText = "Should you fill the fields before continue"
             alert.informativeText = "Please, do it!"
             alert.addButton(withTitle: "OK")
             alert.runModal()
@@ -90,11 +96,12 @@ class ViewController: NSViewController {
     
     @IBAction func buttonTapped(button: NSButton) {
         guard let userData = getUserData() else { return }
+        print(userData.rootPassword)
         if userData.hasCreated == true {
             if button.state == NSOnState {
-				NSAppleScript(source: "do shell script \"networksetup -switchtolocation \(userData.defaultLocationName)\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
+				NSAppleScript(source: "do shell script \"networksetup -switchtolocation AirplaneMode\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
             } else {
-                NSAppleScript(source: "do shell script \"networksetup -switchtolocation AirplaneMode\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
+                NSAppleScript(source: "do shell script \"networksetup -switchtolocation \(userData.defaultLocationName)\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
             }
         } else {
             let alert = NSAlert.init()
@@ -102,6 +109,7 @@ class ViewController: NSViewController {
             alert.informativeText = "Please, do it!"
             alert.addButton(withTitle: "OK")
             alert.runModal()
+            button.state = NSOffState
         }
     }
     
@@ -131,9 +139,25 @@ class ViewController: NSViewController {
         }
     }
 
-	@IBAction func teste(_ sender: Any) {
-		print("teste")
-	}
+    @IBAction func buttonNextTapped(button: NSButton) {
+        if rootPassword.stringValue != "" && defaultLocationName.stringValue != "" {
+            view.window?.title = "AirplaneMode"
+            firstView.isHidden = true
+            secondView.isHidden = false
+        } else {
+            let alert = NSAlert.init()
+            alert.messageText = "Should you fill the fields before continue"
+            alert.informativeText = "Please, do it!"
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
+    }
+    
+    @IBAction func buttonBackTapped(button: NSButton) {
+        view.window?.title = "AirplaneMode (Settings)"
+        firstView.isHidden = false
+        secondView.isHidden = true
+    }
 }
 
 //MARK: - Structs
